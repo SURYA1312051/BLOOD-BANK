@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+<link rel="Stylesheet" href="9.styles.css">
+
+<style>
+.container{
+    display: flex;
+    grid-template-columns:auto auto;
+    gap:700px
+}
+#feedback{
+    background:transparent;
+    border:2px solid white;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+#feedback:hover{
+    border:2px solid red;}
+</style>
+
+<script>
+function feedback()
+{
+window.prompt("enter your mobile number");
+window.alert("Your request for a call has been received and your will get a call if the number is valid from our helpline team shortly thank you!!");
+}
+function refer()
+{
+window.prompt("Enter the mobile number of your friend");
+window.alert("you have successfully referred our blood bank and thank you for taking a social initiative" );
+}
+
+function find()
+{var a=prompt("enter your email id");
+document.getElementById("get").innerHTML="check the mail  "+a+"  to find the donors avilable if the mail is valid";}
+
+
+</script>
+<title>Vellore blood bank
+</title>
+</head>
+<body><h1><center><strong>VELLORE BLOOD BANK </strong></center></h1><hr>
+
+
+<h3><i>bank.com<br/>a social initiative</i></h3>
+<hr>
+
+
+<p id="ic1">
+<form id="f1" action="3.dashboard.html"><center>
+<b>donor login id:</b> <input type="text" name="my name" id="name" class="f11" required>
+<b>password:</b> <input type="password" name="password" id="pass" class="f11" required>
+<input type="submit" name="submit" id="submit now" class="b1" value="login"  required>
+<input type="reset" name="reset" id="reset" class="b1" ></center><hr>
+</form>
+</p>
+
+<p id="ic">
+<button onclick="document.location='2.register page.html'" target="_blank" class="b1">register</button>
+<button onclick="document.location='5.why to donate.html'" target="_main" title="register" class="b1">why to donate blood</button>
+<button onclick="document.location='4.who can donate.html'" target="_blank" class="b1">who can donate blood</button>
+<button onclick="refer()" class="b1">refer a friend</button>
+<button onclick="document.location='6.contact page.html'" target="_blank" class="b1">contact us</button>
+</p>
+<hr>
+
+<div class="container">
+<div id="div1">
+<h2><u>Find a donor</u></h2>
+<form action="server url">
+<b><strong>state</strong></b>:<select name="state" id="state" class="ddl">
+<option value="AP">ANDHRAPRADESH</option>
+<option value="TN">TAMILNADU</option>
+<option value="KNK">KARNATAKA</option>
+<option value="TNG">TELANGANA</option>
+<option value="KRL">KERALA</option>
+<option value="KRL">VELLORE</option>
+</select>
+</form>
+
+
+
+
+
+
+<br />
+
+
+
+
+
+<form action="server url" >
+<b><strong>city:</strong></b><select name="city" id="city" class="ddl">
+<option value="AP" >VIJAYAWADA</option>
+<option value="AP" >VISHAAPATTANAM</option>
+<option value="AP">KURNOOL</option>
+<option value="AP">TIRUPATHI</option>
+<option value="TN">MADHURAI</option>
+<option value="TN">TRICHI</option>
+<option value="TN">CHENNAI</option>
+<option value="TN">COIMBATURE</option>
+<option value="KNK">BENGALURU</option>
+<option value="KNK">SHIVAMOGGA</option>
+<option value="KNK">MANGALURU</option>
+<option value="KNK">CHIKKAMAGULURU</option>
+<option value="TNG">HYDERABAD</option>
+<option value="TNG">WARANGAL</option>
+<option value="TNG">NIZAMABAD</option>
+<option value="TNG">KHAMMAM</option>
+<option value="KRL">KOZHIKODE</option>
+<option value="KRL">KOCHI</option>
+<option value="KRL">THIRUVUNANTHAPURAM</option>
+<option value="KRL">THRISSUR</option>
+</SELECT>
+</form></br>
+
+
+<form action="server url">
+<b><strong>area:</strong></b><select name="area" id="area" class="ddl">
+<option value="outskirts">OUTSKIRTS</option>
+<option value="outskirts">IN THE CITY</option>
+<option value="outskirts">FAR FROM CITY</option>
+<option value="outskirts">5-10KM FROM CITY</option>
+<option value="outskirts">MORE THAN 10 KM FROM CITY</option>
+</select>
+</form><br />
+
+
+<form action="sever url">
+<b><strong>blood group:</strong></b><select name="blood group" id="group" class="ddl">
+<option value="A+">A+</option>
+<option value="A-">A-</option>
+<option value="AB+">AB+</option>
+<option value="AB-">AB-</option>
+<option value="B+">B+</option>
+<option value="B-">B-</option>
+<option value="O+">O+</option>
+<option value="O-">O-</option>
+</select>
+</form><br />
+<button onclick="find()" class="b1">go</button>
+<h2 id="get"></h2>
+</div>
+
+
+
+<div id="div 2"><pre>
+
+</pre>
+<video src="bloodvedio.mp4" width="350"  controls autoplay muted loop style="border:5px solid rgb(189, 109, 15); border-radius:5px;"></video></div>
+
+</div>
+
+
+<h2><u>Donation Process</u></h2>
+<h3><pre><i>
+1.First click on register and enroll your profile on the website
+2.Then your login id and password will be sent to you in form a message
+3.Then come back to home page and enter your login id and password.and click on login
+4.Then select the place where you would like to donate your blood.
+5.You will get a call from our representative of your selected blood bank.
+6.Our representative will send you an sms in which you come to know the date and time of donation of your blood.
+7.And you will also get health instructions from our medical expert.
+</i></pre></h3>
+<hr>
+
+
+<p style="color:red; font-size:25px;"><b><u>our helpline numbers</u></p></b>
+<p style="font-size:20px;"><b><i>mr.Ramesh:6959223351<br />
+mr.Prakash:9315874563<br />
+mr.Prudhvi:664825691<br />
+mr.Kiran:826341596<br />
+mr.Rahul:7596328469<br />
+ms.Priya:9684585698</b></i></p><br />
+
+
+<button  onclick="feedback()" id="feedback" >Request a call</button>
+
+<hr><center>
+<p style="font-size:20px;">
+VIT blood bank       
+</p>
+<p>
+copyright &copy; 2025
+</p>
+<div id="foot">
+<a href="https://www.instagram.com" class="foot">instagram</a>
+<a href="https://www.twitter.com" class="foot">twitter</a>
+<a href="https://www.telegram.com" class="foot">telegram</a><br /><br />
+</div>
+<img src="VELLORE.png" width="60">
+
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+#ic{word-spacing:210px;
+color:red;
+}
+
+body{
+background-image:url("b7.jpg");
+background-size:contain;
+background-attatchment:scroll;
+}
+
+#f1{color:red;
+font-size:30px;
+font-family:Garamond}
+
+.ddl{background-color:#ffe6e6;
+border:3px solid rgb(199, 104, 32);
+font-size:15px;
+border-radius:8px;
+cursor:pointer}
+
+.f11{border:3px solid rgb(198, 84, 138);
+
+border-radius:8px;
+background-color:#ffe6e6;
+background-size:cover;
+
+font-size:18px;
+font-family:bold;
+font-weight:5px;}
+
+.f12,.b1{border:3px solid rgb(199, 104, 32);
+font-size:15px;
+border-radius:8px;
+background-color:#ffe6e6;
+cursor:pointer;
+}
+
+.f12:hover,.b1:hover{background-color:rgb(235, 255, 113);}
+
+
+h1{margin-top:30px; font-family:cursive; color:rgb(124, 0, 66); text-transform:uppercase; font-size:40px;}
+
+button{background-color:#FFDAB9;}
+
+
+h2{color:red;}
+
+
+h3{font-size:20px;}
+
+#ta{border:5px solid #ac5353;
+border-radius:6px;
+background:transparent;
+}
+
+#ttta{font-size:25px;
+font-family:Courier New ;}
+
+.foot{text-decoration:none;
+color:black;
+font-size:15px;} 
+.foot:hover{font-size:20px;
+border-bottom:2px solid green;}
+#foot{word-spacing:10px;}
+
+
+

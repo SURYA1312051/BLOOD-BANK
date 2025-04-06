@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body{background-color:powderblue;
+background-size:cover;}
+.grid-container{display:grid;
+grid-template-columns:300px auto ;
+}
+.iitem{display:grid;
+grid-template-rows:100px auto;
+}
+
+tr:hover{border: 2px solid green; font-weight:bold;}
+
+.iiitem{display:grid;
+grid-template-columns:auto auto;}
+
+.item{border:2px solid black;}
+
+.ii{border:2px solid black;
+
+padding-left:50px;
+}
+
+.ddl{background-color:#ffe6e6;
+border:3px solid rgb(199, 104, 32);
+font-size:15px;
+border-radius:8px;
+cursor:pointer}
+
+#options{
+background-color:rgb(53, 99, 71);
+}
+
+.table{border:2px solid black;
+font-size:30px;
+padding:30px;}
+
+table{border-collapse:collapse;}
+
+th,td{font-size:30px;
+border:1px solid white;
+padding:15px;
+color:rgb(126, 0, 85);}
+
+.hm{text-decoration:none;
+font-weight:bold;
+color:white;}
+.hm:hover{color:red;}
+
+
+#options{display:grid;
+grid-template-columns:auto auto auto auto auto;}
+.foot{text-decoration:none;
+color:black;
+font-size:15px;} 
+#foot{word-spacing:10px;}
+
+</style>
+
+<script>
+function donate()
+{var a=prompt("enter your starting date of your schedule");
+var b=prompt("enter your ending date of your schedule");
+var c=prompt("enter your free time");
+document.getElementById("don").innerHTML="you will be available as a donor from "+a+" to "+b+" during "+c+" so please be alert so that you don't miss the notification from the portal";
+}
+function find()
+{window.alert("contact details of donors available have been sent to your email and your inbox")}
+</script>
+
+<title>
+</title>
+</head>
+<body>
+<div class="grid-container">
+
+<div class="item" id="photo"><img src="mpp.png" width=270 height=120></div>
+
+<div id="db" class="iitem">
+<div id="dash" class="ii" style="font-size:70px; color:red;"><center>VELLORE BLOOD BANK</center></div>
+<div id="options" class="ii">
+<a href="1.title page.html" class="hm">HOME</a>
+
+<a href="7.aboutus.html" class="hm">ABOUT US</a>
+
+<a href="help.html" class="hm">HELP</a>
+<a href="8.actvities.html" class="hm">RECENT ACTIVITIES</a>
+<a href="1.title page.html" class="hm">LOGOUT</a>
+</div>
+</div>
+<div class="item" style="font-size:20px;">
+<h3><pre>
+Name :KILLANA SURYA
+Age  :18
+State:andhrapradesh
+Dist :palanadu
+Blood:A+
+ph no:9874563210
+email:sur@gmail.com
+address:4th ward 
+        SAP 
+        door no:7/1/87
+</pre></h3><br />
+<button onclick="donate()" class="ddl">make your next donation</button>
+<h2 id="don">you are currently not an active donor.if you are willing to donate blood please click the above button and enter the required details</h2>
+
+</div>
+
+<div class="iiitem">
+
+<div class="table">
+your donations:
+
+<table>
+<tr>
+<th>date</th>
+<th>recipient</th>
+<th>area</th>
+</tr>
+
+<tr>
+<td>27-01-22</td>
+<td>k.ravikumar</td>
+<td>sivamogga</td>
+</tr>
+
+<tr>
+<td>24-02-22</td>
+<td>p.vishnu</td>
+<td>vizag</td>
+</tr>
+
+
+<tr>
+<td>26-04-22</td>
+<td>l.dhanush</td>
+<td>viajaywada</td>
+</tr>
+
+<tr>
+<td>26-06-22</td>
+<td>l.vijay</td>
+<td>coimbature</td>
+</tr>
+
+<tr>
+<td>18-08-22</td>
+<td>s.rajesh</td>
+<td>mysore</td>
+</tr>
+
+<tr>
+<td>26-10-22</td>
+<td>t.narendra</td>
+<td>hyderabad</td>
+</tr>
+
+</table>
+</div>
+<div class="table">
+your receivals:
+<table>
+<tr>
+<th>date</th>
+<th>donor</th>
+<th>area</th>
+</tr>
+
+<tr>
+<td>30-01-22</td>
+<td>k.Satish</td>
+<td>coimbature</td>
+</tr>
+
+<tr>
+<td>23-02-22</td>
+<td>p.Kishore</td>
+<td>sivamogga</td>
+</tr>
+
+
+<tr>
+<td>18-04-22</td>
+<td>R.Vijay</td>
+<td>Vizag</td>
+</tr>
+
+<tr>
+<td>16-06-22</td>
+<td>M.ramu</td>
+<td>vijayawada</td>
+</tr>
+
+<tr>
+<td>23-08-22</td>
+<td>M.Rakesh</td>
+<td>Trivendram</td>
+</tr>
+
+<tr>
+<td>14-10-22</td>
+<td>N.Ravindra</td>
+<td>Hyderabad</td>
+</tr>
+
+</table>
+
+</div>
+</div>
+<div class="item">
+<h2><u>find a donor</u></h2>
+<form action="server url">
+<b><strong>state</strong></b>:<select name="state" id="state" class="ddl">
+<option value="AP">ANDHRAPRADESH</option>
+<option value="TN">TAMILNADU</option>
+<option value="KNK">KARNATAKA</option>
+<option value="TNG">TELANGANA</option>
+<option value="KRL">KERALA</option>
+</select>
+</form>
+
+
+
+
+
+
+<br />
+
+
+
+
+
+<form action="server url" >
+<b><strong>city:</strong></b><select name="city" id="city" class="ddl">
+<option value="AP" >VIJAYAWADA</option>
+<option value="AP" >VISHAAPATTANAM</option>
+<option value="AP">KURNOOL</option>
+<option value="AP">TIRUPATHI</option>
+<option value="TN">MADHURAI</option>
+<option value="TN">TRICHI</option>
+<option value="TN">CHENNAI</option>
+<option value="TN">COIMBATURE</option>
+<option value="KNK">BENGALURU</option>
+<option value="KNK">SHIVAMOGGA</option>
+<option value="KNK">MANGALURU</option>
+<option value="KNK">CHIKKAMAGULURU</option>
+<option value="TNG">HYDERABAD</option>
+<option value="TNG">WARANGAL</option>
+<option value="TNG">NIZAMABAD</option>
+<option value="TNG">KHAMMAM</option>
+<option value="KRL">KOZHIKODE</option>
+<option value="KRL">KOCHI</option>
+<option value="KRL">THIRUVUNANTHAPURAM</option>
+<option value="KRL">THRISSUR</option>
+</SELECT>
+</form></br>
+
+
+<form action="server url">
+<b><strong>area:</strong></b><select name="area" id="area" class="ddl">
+<option value="outskirts">OUTSKIRTS</option>
+<option value="outskirts">IN THE CITY</option>
+<option value="outskirts">FAR FROM CITY</option>
+<option value="outskirts">5-10KM FROM CITY</option>
+<option value="outskirts">MORE THAN 10 KM FROM CITY</option>
+</select>
+</form><br />
+
+
+<form action="sever url">
+<b><strong>blood group:</strong></b><select name="blood group" id="group" class="ddl">
+<option value="A+">A+</option>
+<option value="A-">A-</option>
+<option value="AB+">AB+</option>
+<option value="AB-">AB-</option>
+<option value="B+">B+</option>
+<option value="B-">B-</option>
+<option value="O+">O+</option>
+<option value="O-">O-</option>
+</select><br />
+<h4>date:</h4><input type="date" class="ddl"><br />
+<h4>date:</h4><input type="time" class="ddl">
+</form><br />
+<button onclick="find()" class="ddl">go</button>
+<h2 id="get"></h2>
+</div>
+<div class="iiitem">
+<div class="imgs"><img src="mainbg1.jpg" height=500 width=1200></div>
+
+</div>
+
+</div>
+<hr><center>
+<p style="font-size:20px;">
+VELLORE BLOOD BANK    
+</p>
+<p>
+copyright &copy; 2025
+</p>
+<div id="foot">
+<a href="https://www.instagram.com" class="foot">instagram</a>
+<a href="https://www.instagram.com" class="foot">twitter</a>
+<a href="//www.instagram.com" class="foot">telegram</a><br /><br />
+</div>
+<img src="VELLORE.png" width=60>
+
+</body>
+</html>
